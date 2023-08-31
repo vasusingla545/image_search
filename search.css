@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:30px 80px;
+    /* width:70px; */
+}
+#Searchbar{
+    text-align: center;
+width:250px;
+border-radius: 5px;
+}
+#btn{
+    background-color: rgb(50, 50, 227);
+    width:70px;
+    font-size:medium;
+    color:black;
+    font-weight: 400;
+
+}
+.box{
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+.imagebox img{
+    height: 80%;
+    width:100%;
+    /* margin: 40px; */
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+#btn:hover{
+cursor: pointer;
+}
+.imagebox{
+    width:30%;
+    height:50vh;
+justify-content: center;
+text-align: center;
+margin: 30px;
+margin-bottom: 30px;
+border:3px solid black;
+}
+.imagebox img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.imagebox a{
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    margin-bottom: 10px;
+
+}
+.imagebox a:hover{
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+@media only screen and (max-width:830px) {
+    .imagebox{
+        width:100%;
+    }
+}
+@media only screen and(max-width:1200px) {
+
+    .imagebox{
+        padding: 10px 30px;
+        width:50%;
+    }
+}
+#showmore{
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    margin: 30px auto;
+    background-color: green;
+    font-size: large;
+    color: white;
+    padding:5px 10px;
+    display: none;
+}
+#showmore:hover{
+    box-shadow: 3px 3px 3px green;
+    cursor: pointer;
+}
